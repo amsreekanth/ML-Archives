@@ -307,7 +307,7 @@ dataset}\label{description-of-the-dataset}
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}9}]:} \PY{c+c1}{\PYZsh{}Shape}
+{\color{incolor}In [{\color{incolor}4}]:} \PY{c+c1}{\PYZsh{}Shape}
         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Dataset Shape : }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{haberman}\PY{o}{.}\PY{n}{shape}\PY{p}{)}
         
         \PY{c+c1}{\PYZsh{}Columns in the dataset}
@@ -324,11 +324,11 @@ Columns in the dataset :  Index(['Age', 'Op\_Year', 'Pos\_Ax\_nodes', 'Survival\
     \end{Verbatim}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}10}]:} \PY{c+c1}{\PYZsh{}Information about the dataset}
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{Information about the dataset : }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{haberman}\PY{o}{.}\PY{n}{info}\PY{p}{(}\PY{p}{)}\PY{p}{)}
-         
-         \PY{c+c1}{\PYZsh{}Description of dataset}
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{Description :}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{haberman}\PY{o}{.}\PY{n}{describe}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c+c1}{\PYZsh{}Information about the dataset}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{Information about the dataset : }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{haberman}\PY{o}{.}\PY{n}{info}\PY{p}{(}\PY{p}{)}\PY{p}{)}
+        
+        \PY{c+c1}{\PYZsh{}Description of dataset}
+        \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{Description :}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{haberman}\PY{o}{.}\PY{n}{describe}\PY{p}{(}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -379,11 +379,11 @@ above}\label{relevant-statistical-indormation-can-be-found-out-in-the-cell-above
 Visualization}\label{scatter-plot-visualization}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
-         \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
-         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
+        \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -399,11 +399,11 @@ nodes
 found.}\label{not-much-sense-can-be-made-out-of-this-plot-as-the-scatter-plot-seems-to-show-no-particular-pattern-so-we-can-say-that-there-exists-no-relation-between-age-of-the-patient-and-the-number-of-positive-axill-nodes-found.}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}17}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
-         \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Op\PYZus{}Year}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
-         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
+        \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Op\PYZus{}Year}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -416,11 +416,11 @@ found.}\label{not-much-sense-can-be-made-out-of-this-plot-as-the-scatter-plot-se
 pattern}\label{even-this-plot-is-almost-evenly-spread-with-no-particular-pattern}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}18}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
-         \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
-         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
+        \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -434,11 +434,11 @@ both groups of patients share the common a large common range of
 age}\label{same-as-we-cannot-form-any-kind-of-inference-from-the-plot-as-both-groups-of-patients-share-the-common-a-large-common-range-of-age}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}19}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
-         \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
-            \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
-         \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
+        \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{plt}\PY{o}{.}\PY{n}{scatter}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
+           \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+        \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -456,9 +456,9 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     \subsubsection{Pair-Plot}\label{pair-plot}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}21}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{plt}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          \PY{n}{sns}\PY{o}{.}\PY{n}{set\PYZus{}style}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{whitegrid}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}\PY{p}{;}
-         \PY{n}{sns}\PY{o}{.}\PY{n}{pairplot}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{3}\PY{p}{)}\PY{p}{;}
+         \PY{n}{sns}\PY{o}{.}\PY{n}{pairplot}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{3}\PY{p}{,} \PY{n+nb}{vars}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Op\PYZus{}Year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 
@@ -471,7 +471,7 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     \subsection{PDF, CDF Analysis}\label{pdf-cdf-analysis}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}22}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)} \PYZbs{}
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)} \PYZbs{}
             \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
             \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
@@ -484,7 +484,7 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}23}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)} \PYZbs{}
+{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)} \PYZbs{}
             \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Age}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
             \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
@@ -497,7 +497,7 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}24}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)} \PYZbs{}
+{\color{incolor}In [{\color{incolor}13}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{FacetGrid}\PY{p}{(}\PY{n}{haberman}\PY{p}{,} \PY{n}{hue}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Survival\PYZus{}Status}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{5}\PY{p}{)} \PYZbs{}
             \PY{o}{.}\PY{n}{map}\PY{p}{(}\PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{,} \PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Op\PYZus{}Year}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} \PYZbs{}
             \PY{o}{.}\PY{n}{add\PYZus{}legend}\PY{p}{(}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
@@ -510,7 +510,7 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}54}]:} \PY{n}{counts}\PY{p}{,} \PY{n}{bin\PYZus{}edges} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
+{\color{incolor}In [{\color{incolor}14}]:} \PY{n}{counts}\PY{p}{,} \PY{n}{bin\PYZus{}edges} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
                                           \PY{n}{density} \PY{o}{=} \PY{k+kc}{True}\PY{p}{)}
          \PY{n}{pdf} \PY{o}{=} \PY{n}{counts}\PY{o}{/}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{counts}\PY{p}{)}\PY{p}{)}
          \PY{n+nb}{print}\PY{p}{(}\PY{n}{pdf}\PY{p}{)}\PY{p}{;}
@@ -519,7 +519,8 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{bin\PYZus{}edges}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,}\PY{n}{pdf}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{bin\PYZus{}edges}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,} \PY{n}{cdf}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-         
+         \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PDF, CDF of Num of positive axill nodes found}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{labels}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PDF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{CDF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
@@ -537,7 +538,7 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}55}]:} \PY{n}{counts}\PY{p}{,} \PY{n}{bin\PYZus{}edges} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
+{\color{incolor}In [{\color{incolor}15}]:} \PY{n}{counts}\PY{p}{,} \PY{n}{bin\PYZus{}edges} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
                                           \PY{n}{density} \PY{o}{=} \PY{k+kc}{True}\PY{p}{)}
          \PY{n}{pdf} \PY{o}{=} \PY{n}{counts}\PY{o}{/}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{counts}\PY{p}{)}\PY{p}{)}
          \PY{n+nb}{print}\PY{p}{(}\PY{n}{pdf}\PY{p}{)}\PY{p}{;}
@@ -546,6 +547,8 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{bin\PYZus{}edges}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,}\PY{n}{pdf}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{bin\PYZus{}edges}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,} \PY{n}{cdf}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PDF, CDF of Age of the patients when they were operated upon}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{labels}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PDF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{CDF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
@@ -563,7 +566,7 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}56}]:} \PY{n}{counts}\PY{p}{,} \PY{n}{bin\PYZus{}edges} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Op\PYZus{}Year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
+{\color{incolor}In [{\color{incolor}16}]:} \PY{n}{counts}\PY{p}{,} \PY{n}{bin\PYZus{}edges} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{histogram}\PY{p}{(}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Op\PYZus{}Year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,} \PY{n}{bins}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
                                           \PY{n}{density} \PY{o}{=} \PY{k+kc}{True}\PY{p}{)}
          \PY{n}{pdf} \PY{o}{=} \PY{n}{counts}\PY{o}{/}\PY{p}{(}\PY{n+nb}{sum}\PY{p}{(}\PY{n}{counts}\PY{p}{)}\PY{p}{)}
          \PY{n+nb}{print}\PY{p}{(}\PY{n}{pdf}\PY{p}{)}\PY{p}{;}
@@ -572,6 +575,8 @@ classes}\label{scatter-plot-does-show-a-density-of-class-1-nearer-to-0-where-are
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{bin\PYZus{}edges}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,}\PY{n}{pdf}\PY{p}{)}\PY{p}{;}
          \PY{n}{plt}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{bin\PYZus{}edges}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,} \PY{n}{cdf}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Op\PYZus{}Year}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PDF, CDF of Year of operation}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{plt}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{n}{labels}\PY{o}{=}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{PDF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{CDF}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
@@ -593,7 +598,7 @@ than that
 ?}\label{q.-how-many-people-lived-more-than-5-years-and-how-many-less-than-that}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}43}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{(}\PY{n}{haberman}\PY{o}{.}\PY{n}{Survival\PYZus{}Status}\PY{p}{,} \PY{n}{kde}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{rug}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;}
+{\color{incolor}In [{\color{incolor}17}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{distplot}\PY{p}{(}\PY{n}{haberman}\PY{o}{.}\PY{n}{Survival\PYZus{}Status}\PY{p}{,} \PY{n}{kde}\PY{o}{=}\PY{k+kc}{False}\PY{p}{,} \PY{n}{rug}\PY{o}{=}\PY{k+kc}{True}\PY{p}{)}\PY{p}{;}
 \end{Verbatim}
 
 
@@ -611,7 +616,7 @@ who lived more than 5 years
 ?}\label{q.-how-many-number-of-axil-nodes-were-found-for-the-people-who-lived-more-than-5-years}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}44}]:} \PY{n}{long\PYZus{}lived}\PY{o}{=}\PY{n}{haberman}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Survival\PYZus{}Status}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{]}
+{\color{incolor}In [{\color{incolor}18}]:} \PY{n}{long\PYZus{}lived}\PY{o}{=}\PY{n}{haberman}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Survival\PYZus{}Status}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]} \PY{o}{==} \PY{l+m+mi}{1}\PY{p}{]}
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Number of people who lived for more than 5 years : }\PY{l+s+se}{\PYZbs{}n}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{long\PYZus{}lived}\PY{o}{.}\PY{n}{describe}\PY{p}{(}\PY{p}{)}\PY{p}{)}
          
          \PY{n}{short\PYZus{}lived}\PY{o}{=}\PY{n}{haberman}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{n}{haberman}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Survival\PYZus{}Status}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{o}{==}\PY{l+m+mi}{2}\PY{p}{]}
@@ -660,7 +665,7 @@ of the people as in their case the disease spread a lot
 more.}\label{gives-us-a-clear-picture-of-the-spread-of-the-disease-and-thus-intuitively-can-be-used-as-a-important-reason-for-the-early-death-of-the-people-as-in-their-case-the-disease-spread-a-lot-more.}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}45}]:} \PY{c+c1}{\PYZsh{}Finding out the medians}
+{\color{incolor}In [{\color{incolor}19}]:} \PY{c+c1}{\PYZsh{}Finding out the medians}
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Median Number of Positive Axil Nodes found for class 1 : }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{median}\PY{p}{(}\PY{n}{long\PYZus{}lived}\PY{p}{)}\PY{p}{)}
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Median Number of Positive Axil Nodes found for class 2 : }\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{np}\PY{o}{.}\PY{n}{median}\PY{p}{(}\PY{n}{short\PYZus{}lived}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
@@ -685,7 +690,7 @@ between both
 classes}\label{trying-out-box-plot-to-see-the-information-visually-and-to-determine-the-difference-between-the-variance-of-the-num_ax_nodes-between-both-classes}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}47}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{boxplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Survival\PYZus{}Status}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{data}\PY{o}{=}\PY{n}{haberman}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}20}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{boxplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Survival\PYZus{}Status}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{n}{data}\PY{o}{=}\PY{n}{haberman}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 
@@ -696,7 +701,7 @@ classes}\label{trying-out-box-plot-to-see-the-information-visually-and-to-determ
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}48}]:} \PY{c+c1}{\PYZsh{}Denser regions are darther and sparser regions are thinner}
+{\color{incolor}In [{\color{incolor}21}]:} \PY{c+c1}{\PYZsh{}Denser regions are darther and sparser regions are thinner}
          \PY{n}{sns}\PY{o}{.}\PY{n}{violinplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Survival\PYZus{}Status}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{size}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{haberman}\PY{p}{)}
          \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
@@ -728,12 +733,12 @@ positive axial
 nodes}\label{although-there-are-quite-some-outliers-in-class-1-who-survived-to-live-more-than-5-years-despite-having-more-number-of-positive-axial-nodes}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}49}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{jointplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{long\PYZus{}lived}\PY{p}{,} \PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kde}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}22}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{jointplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{long\PYZus{}lived}\PY{p}{,} \PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kde}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 \end{Verbatim}
 
 
 \begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}49}]:} <seaborn.axisgrid.JointGrid at 0x7f81cf0e5d68>
+{\color{outcolor}Out[{\color{outcolor}22}]:} <seaborn.axisgrid.JointGrid at 0x7fe9fc33dda0>
 \end{Verbatim}
             
     \begin{center}
@@ -742,12 +747,12 @@ nodes}\label{although-there-are-quite-some-outliers-in-class-1-who-survived-to-l
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}50}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{jointplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{short\PYZus{}lived}\PY{p}{,} \PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kde}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}23}]:} \PY{n}{sns}\PY{o}{.}\PY{n}{jointplot}\PY{p}{(}\PY{n}{y}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Age}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{x}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pos\PYZus{}Ax\PYZus{}nodes}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,} \PY{n}{data}\PY{o}{=}\PY{n}{short\PYZus{}lived}\PY{p}{,} \PY{n}{kind}\PY{o}{=}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{kde}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 \end{Verbatim}
 
 
 \begin{Verbatim}[commandchars=\\\{\}]
-{\color{outcolor}Out[{\color{outcolor}50}]:} <seaborn.axisgrid.JointGrid at 0x7f81cf075390>
+{\color{outcolor}Out[{\color{outcolor}23}]:} <seaborn.axisgrid.JointGrid at 0x7fe9fc5ddcf8>
 \end{Verbatim}
             
     \begin{center}
